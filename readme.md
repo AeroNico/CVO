@@ -1,6 +1,6 @@
 Sketch del proyecto versión mobile
 
-![Sketchs]('assets/img/sketch.jpeg')
+![Sketchs](https://raw.githubusercontent.com/AeroNico/CVO/master/assets/img/sketch.jpeg)
 
 
 **¿Qué tipo de patrón usaste para el proyecto?**
