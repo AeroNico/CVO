@@ -1,0 +1,23 @@
+.skills {
+    &__title {
+        margin-top:3em;
+        margin-bottom:1.5em;
+    }
+
+    &__subtitle {
+        margin-bottom:.6em;
+    }
+
+    &__text {
+        float:left;
+        width:100%;
+        margin-bottom: 2.5em;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .skills__subtitle {
+        float:left;
+        width:80%;
+    }
+}

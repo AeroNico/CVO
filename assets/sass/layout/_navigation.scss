@@ -1,0 +1,128 @@
+.navigation {
+    position:fixed;
+    width:100%;
+    background-color: $limegreen;
+
+    &__link {
+        padding:1em 1em;
+        text-transform: uppercase;
+        color:$mustbeblack;
+        font-weight:$bold;
+        font-size:$medium;
+        display:block;
+        text-align: center;
+        padding: 1em;
+        text-decoration: none;
+            &:hover {
+            color:$darkgreen;
+        }
+
+    }
+
+    &__logo {
+        position:absolute;
+        padding: 0.45em .8em;
+    }
+
+    &__container {
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    &__list {
+        list-style-type: none;
+    }
+
+    &__img {
+        width:3em;
+        border-radius: 6em;
+    }
+}
+
+.collapsible {
+    text-align: right;
+
+    label {
+        display: block;
+        padding-top: 0.9em;
+        padding-bottom: 0.9em;
+        padding-right: 1.3em;
+        font-size: 1.4rem;
+    }
+}
+
+#menu {
+    display:none;
+}
+
+input:checked ~ .navigation__container {
+    max-height: 100%;
+}
+
+@media only screen and (min-width:768px) {
+
+    .navigation {
+        height:100%;
+        position:sticky;
+
+        &__background {
+            position:fixed;
+            background-color: $limegreen;
+            height:100vh;
+            width:25%;
+        }
+        &__logo {
+            position:fixed;
+            top:20vh;
+            left:1em;
+        }
+        &__img {
+            width:8em;
+        }
+        
+        &__container {
+            max-height: 100%;
+            overflow:visible;
+        }
+
+        &__list {
+            display:initial;
+            margin: inherit;
+            padding: inherit;
+        }
+        
+        &__link {
+            padding: .5em 1em;
+        }
+    }
+
+    .collapsible {
+        position: fixed;
+        top: 40vh;
+        left: 1.4em;
+        & label{
+            display:none;
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .navigation {
+        &__background {
+            width:16.6%;
+        }
+
+        &__logo {
+            position:fixed;
+            top:20vh;
+            left:2em;
+        }
+    }
+    .collapsible {
+            position: fixed;
+            top: 40vh;
+            left: 2.4em;
+        }
+
+}

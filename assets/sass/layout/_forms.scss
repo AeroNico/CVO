@@ -1,0 +1,51 @@
+.contact {
+
+    &__title {
+        margin-top:3em;
+        margin-bottom:1.5em;
+    }
+
+    &__text {
+        margin-bottom: 2.5em;
+    }
+
+    &__form {
+        font-family: $lato;
+    }
+
+    & label{
+        width:100%;
+        float:left;
+        margin-top:3em;
+        &:first-child {
+            margin-top:4em;
+        }
+    }
+
+    &__form input {
+        float:left;
+        width:100%;
+        margin-top: 2em;
+        padding:.5em .5em;
+        border: solid .2px $lightgray;
+        &::placeholder {
+            color: $lightgray;
+        }
+    }
+
+    &__form textarea {
+        width:100%;
+        margin-top: 2em;
+        padding: .5em .5em;
+        border: solid .2px $lightgray;
+        color:$lightgray;
+        font-family: $lato;
+    }
+}
+@media only screen and (min-width:768px) {
+    .contact__subtitle {
+        float:left;
+        width:80%;
+    }
+}
+

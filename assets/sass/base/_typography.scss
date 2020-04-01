@@ -1,0 +1,55 @@
+h1, h2, h3, h4, h5, h6, p, span, button, form, input, a {
+    font-family: $lato;
+    color:$mustbeblack;
+}
+
+h1 {
+    font-size:$xx-large;
+    font-weight: $black;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width:768px) {
+    h1 {
+        font-size:$xxx-large;
+    }
+}
+
+h2 {
+    font-size:$xx-large;
+    font-weight: $black;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size:$x-large;
+    font-weight:$bold;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size:$medium;
+    font-weight: $regular;
+    color:$gray;
+}
+
+h5 {
+    font-size:$medium;
+    font-weight:$regular;
+    color:$gray;
+    text-transform: uppercase;
+    line-height: 1.3rem;
+}
+
+span {
+    text-transform: initial;
+    color:$mustbeblack;
+    font-weight: $bold;
+}
+
+p {
+    font-size:$medium;
+    color:$gray;
+    font-weight: $regular;
+    line-height: 1.5rem;
+}

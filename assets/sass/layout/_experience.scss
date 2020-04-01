@@ -1,0 +1,46 @@
+.experience {
+
+    &__title {
+        margin-top:3em;
+        margin-bottom:1.5em;
+    }
+
+    &__subtitle {
+        margin-bottom:.6em;
+    }
+
+    &__date {
+        margin-bottom:.3em;
+    }
+
+    &__role {
+        margin-bottom:1em;
+    }
+
+    &__text {
+        text-align:justify;
+        margin-bottom:5em;
+        &:last-child {
+            margin-bottom:0;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .experience__subtitle {
+        float:left;
+        width:80%;
+    }
+
+    .experience__date {
+        float:right;
+        text-align:right;
+        width:20%
+    }
+
+    .experience__role {
+        float:left;
+        width:100%
+    }
+
+}
